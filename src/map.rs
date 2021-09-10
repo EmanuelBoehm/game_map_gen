@@ -3,7 +3,7 @@ use rand::prelude::SliceRandom;
 use rand::Rng;
 
 lazy_static!{
-    static ref HEALTH_VALS: Vec<u32> = (0..7).map(|n| u32::pow(2,n)).collect();
+    static ref HEALTH_VALS: Vec<u32> = (0..6).map(|n| u32::pow(2,n+1)).collect();
 }
 #[derive(Debug)]
 pub struct BrickMap {
